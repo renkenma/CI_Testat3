@@ -11,13 +11,13 @@ jobs:
 
         steps:
           - name: auschecken
-            uses: actions
+            uses: actions/checkout@v4
 
           - name: Java auf Server installieren
             uses: actions/setup-java@v4
             with:
                 java-version: '17'
-                distribution: 'main'
+                distribution: 'temurin'
 
           - name: Dateien kompilieren
-            run: javac Calculator.java CalculatorTest.java
+            run: javac src/Calculator.java src/CalculatorTest.java
