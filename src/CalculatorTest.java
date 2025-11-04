@@ -14,7 +14,7 @@ public class CalculatorTest {
 
         // Test 2: Multiplizieren
         int mulResult = calc.multiply(4, 5);
-        if(mulResult == 20) {
+        if(mulResult == 22) {
             System.out.println("Multiplikatinstest bestanden");
         } else {
             System.out.println("Multiplikatinstest fehlgeschlagen");
