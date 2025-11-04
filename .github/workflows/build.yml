@@ -1,0 +1,23 @@
+name: Testat3
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+          - name: auschecken
+            uses: actions
+
+          - name: Java auf Server installieren
+            uses: actions/setup-java@v4
+            with:
+                java-version: '17'
+                distribution: 'main'
+
+          - name: Dateien kompilieren
+            run: javac Calculator.java CalculatorTest.java
