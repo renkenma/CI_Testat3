@@ -21,3 +21,6 @@ jobs:
 
           - name: Dateien kompilieren
             run: javac src/Calculator.java src/CalculatorTest.java
+
+          - name: Tests ausführen
+            run: java -cp src CalculatorTest

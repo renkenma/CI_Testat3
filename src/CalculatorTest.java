@@ -1,4 +1,4 @@
-// Testklasse, testet Calculator und gitb Ergebnisse in Konsole aus
+// Testklasse, testet Calculator und gitb Ergebnisse aus
 public class CalculatorTest {
 
     public static void main(String[] args) {
